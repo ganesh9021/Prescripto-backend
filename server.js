@@ -52,11 +52,6 @@ app.use("/api/admin", adminRouter);
 app.use("/api/doctor", doctorRouter);
 app.use("/api/user", userRouter);
 
-//localhost:4000/api/admin/add-doctor
-app.get("/api/doctor/list", (req, res) => {
-  res.json({ message: "Success" });
-});
-
 app.listen(port, () => {
   console.log("Server started", port);
 });
